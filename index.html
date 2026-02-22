@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Edison Andrey Sánchez Jiménez | Perfil Profesional</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="nav-container">
+        <div class="logo">Edison Sánchez</div>
+        <ul>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#education">Formación</a></li>
+            <li><a href="#certifications">Certificaciones</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header>
+    <div class="hero-content">
+        <img src="foto.png" alt="Foto Profesional" class="profile-pic">
+        <h1>Edison Andrey Sánchez Jiménez</h1>
+        <p>Ingeniero Electrónico | Auditor de TI | Ciberseguridad | Gobierno de TI</p>
+        <span class="location">Bogotá, Colombia | 23 años</span>
+    </div>
+</header>
+
+<!-- SOBRE MI -->
+<section id="about">
+    <h2>Información Personal</h2>
+    <div class="card">
+        <p>
+            Mi nombre es Edison Andrey Sánchez Jiménez, soy colombiano y resido en Bogotá.
+            Tengo 23 años y soy Ingeniero Electrónico. Actualmente me desempeño como Auditor de TI.
+        </p>
+    </div>
+
+    <h2>Perfil Profesional</h2>
+    <div class="card">
+        <p>
+            Ingeniero Electrónico y Auditor de TI con enfoque en ciberseguridad,
+            gobierno de TI y gestión de riesgos tecnológicos.
+        </p>
+        <p>
+            Experiencia en auditoría de sistemas, control interno, seguridad de la información,
+            SAP y No SAP, infraestructura tecnológica y servicios en la nube.
+        </p>
+        <p>
+            Profesional analítico, orientado al detalle y comprometido con resultados
+            de alto impacto.
+        </p>
+    </div>
+</section>
+
+<!-- EDUCACION -->
+<section id="education">
+    <h2>Formación Académica</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Maestría en Informática</h3>
+            <p>Escuela Colombiana de Ingeniería Julio Garavito</p>
+            <span>2025 - 2027</span>
+        </div>
+
+        <div class="card">
+            <h3>Ingeniería Electrónica</h3>
+            <p>Escuela Colombiana de Ingeniería Julio Garavito</p>
+            <span>2020 - 2024</span>
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICACIONES -->
+<section id="certifications">
+    <h2>Certificaciones</h2>
+    <div class="grid">
+        <div class="card">EY Cybersecurity - Information Security Awareness (2025)</div>
+        <div class="card">EY Analytics - Data Integration (2025)</div>
+        <div class="card">EY Data Strategy - Data Architecture (2025)</div>
+        <div class="card">SAP BTP - ABAP Programming (2025)</div>
+    </div>
+</section>
+
+<!-- HABILIDADES -->
+<section id="skills">
+    <h2>Habilidades Técnicas</h2>
+    <div class="skills-grid">
+        <div class="card">
+            <h3>Ciberseguridad</h3>
+            <p>Gestión de vulnerabilidades, monitoreo de incidentes.</p>
+        </div>
+        <div class="card">
+            <h3>Gobierno de TI</h3>
+            <p>COBIT, ITIL, ISO 27001.</p>
+        </div>
+        <div class="card">
+            <h3>Gestión de Riesgos</h3>
+            <p>Evaluación y mitigación de riesgos tecnológicos.</p>
+        </div>
+        <div class="card">
+            <h3>Infraestructura & Cloud</h3>
+            <p>AWS, Azure, Google Cloud.</p>
+        </div>
+        <div class="card">
+            <h3>Desarrollo</h3>
+            <p>Python, Java, SQL.</p>
+        </div>
+        <div class="card">
+            <h3>Inteligencia Artificial</h3>
+            <p>Machine Learning aplicado a auditoría.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="projects">
+    <h2>Proyectos Destacados</h2>
+
+    <div class="card project">
+        <h3>Robot Humanoide – Algoritmos de Estabilización</h3>
+        <span>Feb 2024 - Ago 2024</span>
+        <p>Diseño de algoritmos para locomoción bípeda y reconocimiento de voz.</p>
+    </div>
+
+    <div class="card project">
+        <h3>Clasificador de Residuos con IA</h3>
+        <span>Feb 2024 - Ago 2024</span>
+        <p>Entrenamiento de red neuronal para reconocimiento visual.</p>
+    </div>
+
+    <div class="card project">
+        <h3>Investigador – UAV’s sin GPS</h3>
+        <span>Ago 2022 - Dic 2022</span>
+        <p>Simulación de navegación autónoma sin GPS.</p>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contact">
+    <h2>Información de Contacto</h2>
+    <div class="card contact-card">
+        <p><strong>Teléfono:</strong> +57 3205151406</p>
+        <p><strong>LinkedIn:</strong> www.linkedin.com/in/edison-andrey-sánchez-jiménez-03206825a</p>
+        <p><strong>Correo:</strong> edison.sanchez-j@mail.escuelaing.edu.co</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Edison Andrey Sánchez Jiménez</p>
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+
+function activateSection(id) {
+    sections.forEach(section => section.classList.remove("active-section"));
+    navLinks.forEach(link => link.classList.remove("active-link"));
+
+    const currentSection = document.querySelector(id);
+    const currentLink = document.querySelector(`nav a[href="${id}"]`);
+
+    if (currentSection) {
+        currentSection.classList.add("active-section");
+
+        const navbarHeight = document.querySelector("nav").offsetHeight;
+        const sectionTop = currentSection.getBoundingClientRect().top + window.pageYOffset;
+        const offset = sectionTop - (window.innerHeight / 2) + (currentSection.offsetHeight / 2) - (navbarHeight / 2);
+
+        window.scrollTo({
+            top: offset,
+            behavior: "smooth"
+        });
+    }
+
+    if (currentLink) {
+        currentLink.classList.add("active-link");
+    }
+}
+
+navLinks.forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const id = this.getAttribute("href");
+        activateSection(id);
+    });
+});
+</script>
+
+</body>
+</html>
