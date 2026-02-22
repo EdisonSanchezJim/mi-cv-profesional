@@ -35,11 +35,8 @@ El sitio se encuentra desplegado en Microsoft Azure:
 - Animaciones fade-in al hacer scroll
 - Indicador lateral activo
 - Efecto glassmorphism
-- Modo oscuro
 - Timeline animado para formación académica
 - Botones interactivos
-- Diseño profesional estilo consultora Big4
-- Responsive design
 
 ---
 
@@ -50,7 +47,8 @@ script.js
 server.js
 package.json
 README.md
-
+.github/workflows
+  main_cv-edisonsanchez.yml
 
 ---
 
