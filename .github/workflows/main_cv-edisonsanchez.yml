@@ -1,4 +1,4 @@
-name: Deploy static website to Azure Web App - cv-EdisonSanchez
+name: Deploy Node App to Azure Web App - cv-EdisonSanchez
 
 on:
   push:
@@ -7,25 +7,24 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: read
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Login to Azure
-        uses: azure/login@v2
+      - name: Set up Node
+        uses: actions/setup-node@v3
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_2E9B82399458474396EC21545C638378 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_4C87E55A727349CD93C329E4B7BCEC1F }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_53CF4312FA5A4BA898B517189F36828B }}
+          node-version: '20.x'
 
-      - name: Deploy to Azure Web App
+      - name: Install dependencies
+        run: npm install
+
+      - name: Deploy to Azure
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'cv-EdisonSanchez'
           slot-name: 'Production'
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
