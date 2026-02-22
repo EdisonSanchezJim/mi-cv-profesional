@@ -50,12 +50,30 @@ README.md
 .github/workflows
   main_cv-edisonsanchez.yml
 
+
 ---
+
+## 📂 Descripción de los Archivos del Proyecto
+
+El archivo **index.html** corresponde a la estructura principal del sitio web. En él se define el contenido del currículum, incluyendo las secciones como perfil profesional, formación académica, experiencia, habilidades y datos de contacto. Este archivo organiza la información utilizando etiquetas HTML y funciona como la base que el navegador interpreta para mostrar la página al usuario.
+
+El archivo **styles.css** contiene todos los estilos visuales del sitio. Aquí se definen los colores, fuentes, márgenes, distribución de los elementos y diseño responsivo para que la página se adapte a diferentes dispositivos. Este archivo permite separar la estructura del diseño, facilitando el mantenimiento y mejorando la presentación visual del proyecto.
+
+El archivo **script.js** implementa la interactividad del sitio web. A través de JavaScript, se gestionan comportamientos dinámicos como animaciones, efectos visuales, resaltado de secciones activas o cualquier funcionalidad que mejore la experiencia del usuario. Este archivo permite que la página no sea estática, sino interactiva y moderna.
+
+El archivo **server.js** corresponde al backend del proyecto y está desarrollado con Node.js y Express. Su función principal es levantar un servidor que permita publicar el sitio en internet y servir los archivos estáticos del frontend. Gracias a este archivo, el proyecto puede ejecutarse en un entorno como Azure App Service y estar disponible públicamente.
+
+El archivo **package.json** es el archivo de configuración del proyecto en Node.js. Contiene la información general del proyecto, las dependencias necesarias (como Express) y los scripts de ejecución. Este archivo permite instalar automáticamente los paquetes requeridos y definir cómo se inicia la aplicación.
+
+El archivo **README.md** documenta el proyecto, describiendo su propósito, tecnologías utilizadas y detalles relevantes sobre su despliegue. Su objetivo es facilitar la comprensión del proyecto para cualquier persona que acceda al repositorio en GitHub.
+
+Finalmente, la carpeta **.github/workflows** contiene el archivo de configuración para la integración y despliegue continuo (CI/CD). Este archivo permite que cada vez que se realice un cambio en el repositorio, el proyecto se despliegue automáticamente en Azure, garantizando actualizaciones constantes y automatizadas.
+
 
 ## 📸 Capturas de Pantalla 
 
 **Repo en GitHub**
-<img width="1440" height="900" alt="Captura de Pantalla 2026-02-22 a la(s) 1 52 22 p m" src="https://github.com/user-attachments/assets/88ae8e36-08d2-40a9-ac82-df47525c78fc" />
+<img width="1440" height="900" alt="Captura de Pantalla 2026-02-22 a la(s) 2 51 56 p m" src="https://github.com/user-attachments/assets/503e8058-0692-45cb-b9b5-bf8e349e8099" />
 
 
 **App Service Activo**
